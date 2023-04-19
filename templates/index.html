@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='action.js') }}"></script>
+  </head>
+  <body>
+    <div class="container">
+    <p>
+        Hasnain Gandhi - hg410
+    </p>
+    <h1>Question Generator</h1>
+      <form method="POST" action="/generate">
+        <label for="n">Welcome to the Q/A page. Enter the number of questions</label>
+        <input type="n" id="n" name="n" min="1" max="1000" required>
+        <button type="submit"  value="Generate">Generate</button>
+      </form>
+    </div>
+    
+  </body>
+</html>
